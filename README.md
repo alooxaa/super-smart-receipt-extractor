@@ -9,6 +9,11 @@ git checkout -b my-branch # change my-branch to your branch name
 git push -u origin my-branch # change my-branch to your branch name
 ```
 then work as usual with git and push to that new branch
+```
+git add .
+git commit -m "your commit text"
+git push origin my-branch
+```
 
 ### RU
 Давайте работать в разных ветках и потом сольем все в одну
@@ -20,6 +25,11 @@ git checkout -b my-branch # поменяйте my-branch на название �
 git push -u origin my-branch # поменяйте my-branch на название вашей ветки
 ```
 дальше работаете как обычно с гитом и пушите изменения в ту новую ветку
+```
+git add .
+git commit -m "your commit text"
+git push origin my-branch
+```
 
 ## Example of branch naming / Примеры названий веток:
 - `cv-model` - for computer vision part
