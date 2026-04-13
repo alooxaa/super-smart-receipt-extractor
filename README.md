@@ -14,6 +14,10 @@ git add .
 git commit -m "your commit text"
 git push origin my-branch
 ```
+Also let's keep our commit text clear like:
+- Init project
+- Add new feature
+- Fix bug
 
 ### RU
 Давайте работать в разных ветках и потом сольем все в одну
@@ -30,6 +34,10 @@ git add .
 git commit -m "your commit text"
 git push origin my-branch
 ```
+Также давайте писать понятно что вы сделали в коммите, желательно на английском так:
+- Init project
+- Add new feature
+- Fix bug
 
 ## Example of branch naming / Примеры названий веток:
 - `cv-model` - for computer vision part
