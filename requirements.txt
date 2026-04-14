@@ -1,0 +1,5 @@
+# Core CV pipeline + dataset download. Install Paddle separately (CPU vs GPU/CUDA).
+paddleocr>=2.7
+opencv-python
+numpy
+kagglehub

@@ -64,3 +64,6 @@ ios/Pods/
 coverage/
 .cache/
 .tmp/
+
+# CV pipeline scratch file (legacy path; prefer tempfile in ocr.py)
+temp_cleaned.jpg

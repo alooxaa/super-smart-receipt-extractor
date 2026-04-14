@@ -1,0 +1,12 @@
+{
+  "full_text": "GUDANG HASIL RESTAURANT SDN BHDE\n(1157059-U)\nNO.33,LRG HANG JEBAT, MELAK\n(GST ID:001706905600)\nMC`#03\nREG KER YUN 02-12-201612:33PM 000093\nPEANUT C. CRC200G\nRM7.90\n#9555798500023\nTARO C.CRAC200G\nRM7. 90\nS\n*\n#9555798500016\n2 No\nSUBTOTAL\nRm15.80\nCASH\nRM20.00\nYOUR CHANGE\nRM4:20\nGST.\n. TAX AMT\nRM14.91\nGST:\n6%\nRMO.89\n THANK. YOU\nPLEASE COME AGAIN",
+  "fields": {
+    "company": "GUDANG HASIL RESTAURANT SDN BHDE",
+    "date": "02-12-2016",
+    "total": "15.80",
+    "address": "(1157059-U), NO.33,LRG HANG JEBAT, MELAK, (GST ID:001706905600)"
+  },
+  "method": "paddleocr",
+  "duration_ms": 552,
+  "_note": "From: python -m cv_pipeline.test_one --image \"$IMG_PATH\" (local run, 2026-04-15)"
+}
