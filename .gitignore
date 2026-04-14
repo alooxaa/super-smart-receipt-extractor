@@ -64,3 +64,6 @@ ios/Pods/
 coverage/
 .cache/
 .tmp/
+
+# CV Temp image
+temp_cleaned.jpg
