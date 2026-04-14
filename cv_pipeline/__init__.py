@@ -1,0 +1,1 @@
+"""Receipt CV pipeline package."""
