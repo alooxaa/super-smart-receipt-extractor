@@ -4,6 +4,16 @@ API для сканирования и распознавания чеков. П
 
 **Base URL:** `http://localhost:8000`
 
+## Как запускать
+```
+python3.11 -m venv .venv # если нет нужно скачать python 3.11
+. .venv/Scripts/activate # для windows
+. .venv/bin/activate # для unix
+pip install -r requirements.txt
+python -m cv_pipline.download_sroie
+uvicorn backend.main:app --reload
+```
+
 ---
 
 ## Эндпоинты
