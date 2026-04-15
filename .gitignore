@@ -2,6 +2,10 @@
 .DS_Store
 Thumbs.db
 
+# uv to not overcomplicate and use pip
+pyproject.toml
+uv.lock
+
 # Python
 __pycache__/
 *.py[cod]
@@ -65,5 +69,5 @@ coverage/
 .cache/
 .tmp/
 
-# CV Temp image
+# CV pipeline scratch file (legacy path; prefer tempfile in ocr.py)
 temp_cleaned.jpg
