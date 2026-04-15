@@ -34,7 +34,7 @@ async def scan_receipts(files: Annotated[list[bytes], File()]):
             }
         })
 
-    return {"results": results}
+    return results
 
 def process_job(job_id: str, files: list[bytes]):
     job_results = []
