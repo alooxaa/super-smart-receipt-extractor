@@ -10,7 +10,7 @@ python3.11 -m venv .venv # если нет нужно скачать python 3.11
 . .venv/Scripts/activate # для windows
 . .venv/bin/activate # для unix
 pip install -r requirements.txt
-python -m cv_pipline.download_sroie
+python -m cv_pipeline.download_sroie
 uvicorn backend.main:app --reload
 ```
 
