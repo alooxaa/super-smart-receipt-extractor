@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 200" width="480" height="200">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A0E1A"/>
+      <stop offset="100%" style="stop-color:#101830"/>
+    </linearGradient>
+    <!-- Cyan glow filter -->
+    <filter id="glowCyan" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="glowStrong" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <!-- Scan line gradient -->
+    <linearGradient id="scanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   style="stop-color:#00D9FF;stop-opacity:0"/>
+      <stop offset="20%"  style="stop-color:#00D9FF;stop-opacity:0.8"/>
+      <stop offset="50%"  style="stop-color:#00D9FF;stop-opacity:1"/>
+      <stop offset="80%"  style="stop-color:#00D9FF;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#00D9FF;stop-opacity:0"/>
+    </linearGradient>
+    <!-- Icon bg glow -->
+    <radialGradient id="iconGlow" cx="50%" cy="45%" r="50%">
+      <stop offset="0%"   style="stop-color:#00D9FF;stop-opacity:0.18"/>
+      <stop offset="100%" style="stop-color:#00D9FF;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Card background -->
+  <rect width="480" height="200" rx="20" fill="url(#bgGrad)"/>
+
+  <!-- ── Icon area (left 180px) ─────────────────────────────────────────── -->
+  <!-- Glow halo -->
+  <ellipse cx="90" cy="88" rx="54" ry="54" fill="url(#iconGlow)"/>
+
+  <!-- Receipt body -->
+  <rect x="60" y="28" width="60" height="80" rx="6"
+        fill="rgba(255,255,255,0.04)" stroke="#00D9FF" stroke-width="1.8" stroke-opacity="0.7"/>
+
+  <!-- Data lines inside receipt -->
+  <rect x="70" y="42" width="34" height="3.5" rx="1.5" fill="#00D9FF" opacity="0.9"/>
+  <rect x="70" y="52" width="24" height="2.5" rx="1.2" fill="#A0B4D2" opacity="0.6"/>
+  <rect x="70" y="61" width="30" height="2.5" rx="1.2" fill="#A0B4D2" opacity="0.55"/>
+  <rect x="70" y="70" width="20" height="2.5" rx="1.2" fill="#A0B4D2" opacity="0.5"/>
+  <rect x="70" y="79" width="28" height="2.5" rx="1.2" fill="#A0B4D2" opacity="0.45"/>
+  <rect x="70" y="88" width="22" height="2.5" rx="1.2" fill="#A0B4D2" opacity="0.4"/>
+
+  <!-- Scan line beam (glow) -->
+  <rect x="44" y="66" width="92" height="5" rx="2.5" fill="url(#scanGrad)" filter="url(#glowCyan)" opacity="0.5"/>
+  <!-- Scan line sharp -->
+  <rect x="44" y="67.5" width="92" height="2" rx="1" fill="url(#scanGrad)" filter="url(#glowStrong)"/>
+
+  <!-- Arrow tips on scan line -->
+  <polygon points="44,65 38,69 44,73" fill="#00D9FF" filter="url(#glowCyan)" opacity="0.9"/>
+  <polygon points="136,65 142,69 136,73" fill="#00D9FF" filter="url(#glowCyan)" opacity="0.9"/>
+
+  <!-- Thin bottom zig-zag of receipt -->
+  <polyline points="60,108 66,115 72,108 78,115 84,108 90,115 96,108 102,115 108,108 114,115 120,108"
+            fill="none" stroke="#00D9FF" stroke-width="1.4" stroke-opacity="0.5"/>
+
+  <!-- ── Wordmark (right side) ──────────────────────────────────────────── -->
+  <!-- "Data" -->
+  <text x="170" y="106"
+        font-family="'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-weight="700"
+        font-size="68"
+        letter-spacing="-1"
+        fill="white"
+        opacity="0.95">Data</text>
+
+  <!-- "X" in cyan with glow -->
+  <text x="338" y="106"
+        font-family="'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-weight="700"
+        font-size="68"
+        fill="#00D9FF"
+        filter="url(#glowStrong)">X</text>
+
+  <!-- Tagline -->
+  <text x="170" y="130"
+        font-family="'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-weight="400"
+        font-size="14"
+        letter-spacing="3.5"
+        fill="#00D9FF"
+        opacity="0.55">RECEIPT INTELLIGENCE</text>
+
+  <!-- Thin separator line -->
+  <line x1="170" y1="118" x2="430" y2="118" stroke="#00D9FF" stroke-width="0.6" stroke-opacity="0.2"/>
+
+  <!-- Subtle corner dots (branding detail) -->
+  <circle cx="16" cy="16" r="2" fill="#00D9FF" opacity="0.25"/>
+  <circle cx="464" cy="16" r="2" fill="#00D9FF" opacity="0.25"/>
+  <circle cx="16" cy="184" r="2" fill="#00D9FF" opacity="0.25"/>
+  <circle cx="464" cy="184" r="2" fill="#00D9FF" opacity="0.25"/>
+</svg>
