@@ -11,7 +11,7 @@ from pathlib import Path
 
 
 def ensure_cuda_dll_paths() -> None:
-    if sys.platform != "win32":
+    if sys.platform != "win32" or sys.platform != "linux":
         return
     try:
         import nvidia.cublas  # type: ignore

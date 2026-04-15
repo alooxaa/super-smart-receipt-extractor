@@ -7,7 +7,7 @@ Usage:
 import argparse
 import json
 
-from .pipeline import process_receipt
+from cv_pipeline.pipeline import process_receipt
 
 
 def main() -> None:
