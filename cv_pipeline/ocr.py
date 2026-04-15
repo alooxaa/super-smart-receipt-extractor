@@ -23,13 +23,15 @@ def _gpu_enabled() -> bool:
 
 
 _USE_GPU = _gpu_enabled()
+print("Device: ", end="")
 if _USE_GPU:
     paddle.device.set_device("gpu:0")
+    print("GPU")
+    ocr_engine = PaddleOCR(lang="en", device="gpu")
 else:
     paddle.device.set_device("cpu")
-
-ocr_engine = PaddleOCR(use_angle_cls=True, lang="en", use_gpu=_USE_GPU)
-
+    print("CPU")
+    ocr_engine = PaddleOCR(use_angle_cls=True, lang="en", device="cpu")
 
 def run_ocr(cleaned_image) -> dict:
     start = time.time()
